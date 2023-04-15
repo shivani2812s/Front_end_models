@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav1">
+            <div id="part1">
+                <p>
+                    Contact : NE-3, Near Crossing Republik, Ghaziabad, Uttar Pradesh, No: +91-8448583370
+                </p>
+            </div>
+            <div id="part2">
+                <i class="ri-facebook-fill"></i>
+                <i class="ri-google-fill"></i>
+                <i class="ri-twitter-fill"></i>
+                <button>SignUp</button>
+                <button>SignIn</button>
+            </div>
+        </nav>
+        <div class="nav2">
+            <div class="nav21">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3xRTPEQN0rDkEbSYcVPpywVEVlw7h32KNXvTgWUHk&s" alt="">
+            </div>
+            <div class="nav22">
+                <a href=""><h5>Home</h5></a>
+                <a href=""><h5>Contact</h5></a>
+                <a href=""><h5>About</h5></a>
+                <a href=""><h5>Admission</h5></a>
+                <a href=""><h5>Courses</h5></a>
+                <a href=""><h5>Student</h5></a>
+            </div>
+            
+        </div>
+        <div class="mobile-navbar">
+            <i class="ri-menu-line mobile-icon" id="icon1" onclick="handle1()" ></i>
+            <i class="ri-close-line mobile-icon active" id="icon2" onclick="handle2()"></i>
+        </div>
+       
+       <div class="header">
+        <div id="heading">
+            <h1>Welcome To <span> ABESIT</span></h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, est. Nisi vel quis, excepturi non aliquam autem, velit, maiores nulla saepe illum quod quo quaerat.
+            </p>
+            <button>Courses</button>
+            <button>more</button>
+        </div>
+       </div>
+       </header>
+       <script>
+        function handle1(){ 
+        document.getElementById("icon1").classList.add("active");
+        document.getElementById("icon2").classList.remove("active");
+        document.querySelector('.nav22').classList.toggle("view");
+
+        }
+        function handle2(){ 
+        document.getElementById("icon2").classList.add("active");
+        document.getElementById("icon1").classList.remove("active");
+        document.querySelector('.nav22').classList.remove('view');
+        } 
+       </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+/* font-family: 'Dancing Script', cursive; */
+*{
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav1{
+    height: 40px;
+    width: 100%;
+    animation: animation1;
+    animation-duration: 1s;
+    animation-delay: 3ms;
+    color: white;
+    background-color: rgb(20, 20, 77);
+    display: flex;
+     align-items: center; /*it will align the items to the centre of your div */
+   justify-content: space-around;   /* it will give space around the  children div */
+}
+@keyframes animation1{
+    0%{
+     transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+#part2{
+    margin: 0 6px;
+}
+#part2 button{
+    margin: 0 4px;
+    padding: 1px 2px;
+}
+.nav2 
+{
+    height: 60px;
+    width: 100%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.nav2 img{
+    height: 30px;
+    width: 160px;
+ object-fit: cover;
+}
+.nav22{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+   line-height: 5px;
+
+}
+.nav22 h5{
+    font-size: medium;
+color: black;
+}
+.header{
+    height: 83vh;
+    width: 100%;
+    color: white;
+    overflow-y: hidden;
+    background-color: blue;
+    background: linear-gradient(rgba(0, 0, 0, 0.409),rgba(20, 20, 77, 0.765)),url('https://abesit.in/wp-content/uploads/2019/11/banner1.jpg');
+    background-size: 100% 100%;  /* it will take the size same as its parent div */
+}
+#heading{
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center; 
+}
+#heading button{
+    padding: 2px 4px;
+    margin: 2px 2px;
+    letter-spacing: 5px;
+    border-radius: 5px;
+    border-color: white;
+    cursor: pointer;
+    animation: animation2;
+    animation-duration: 3s;
+    animation-delay: 10ms;
+    
+}
+#heading h1{
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+    animation: animation2;
+    animation-duration: 1s;
+    animation-delay: 6ms;
+}
+#heading span{
+    color: rgb(20, 20, 77);
+    /* font-family: 'Dancing Script', cursive; */
+    animation: animation2;
+    animation-duration: 1s;
+    animation-delay: 6ms;
+}
+#heading p{
+    font-size: 20px;
+    margin: 40px 0;
+    line-height: 30px;
+    animation: animation2;
+    animation-duration: 2s;
+    animation-delay: 8ms;
+}
+.active{
+    display: none;
+}
+@keyframes animation2 {
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.mobile-navbar{
+    display: none;
+    position: absolute;
+    left: 86%;
+    top: 2.7%;
+
+}
+.mobile-navbar i{
+    padding: 0 8px;
+   font-weight: 500;
+   font-size: large;
+   color: black;
+}
+.view {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background: white;
+    z-index: 999;
+}
+
+@media only screen and (max-width: 800px) {
+    .nav22 a{
+        margin: 80px auto;
+    }
+   .nav22{
+    display: none;
+   }
+   .nav1{
+    display: none;
+   }
+   .mobile-navbar{
+    display: block;
+   }
+   .mobile-navbar{
+        display: block;
+   }
+   #heading {
+    width: 100%;
+}
+}
+
+
+    
